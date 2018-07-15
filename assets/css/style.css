@@ -1,0 +1,24 @@
+body {
+    background-image: url("../images/backgroundCubes.jpg");
+}
+
+/* Add default padding and margin to bootstrap cards :) */
+.card {
+    margin-top: 10px; 
+    margin-bottom: 0px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    padding: 10px;
+}
+
+.d-block {
+    height: 340px;
+}
+
+.carousel-indicators li {
+    background-color: aqua
+}
+
+.carousel-indicators .active {
+    background-color: blue
+}
