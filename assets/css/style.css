@@ -2,6 +2,12 @@ body {
     background-image: url("../images/backgroundCubes.jpg");
 }
 
+h6 {
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Add default padding and margin to bootstrap cards :) */
 .card {
     margin-top: 10px; 
@@ -11,7 +17,7 @@ body {
     padding: 10px;
 }
 
-.d-block {
+.img-fluid {
     height: 340px;
 }
 
@@ -21,4 +27,42 @@ body {
 
 .carousel-indicators .active {
     background-color: blue
+}
+
+.carousel-item > .d-flex > p {
+    width: 300px;
+    min-width: 150px;
+    height: 340px;
+    margin: 0px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon {
+    background-color: black
+}
+
+.carousel-control-next-icon {
+    background-color: black
+}
+
+/* Make the carousel mobile responsive 
+   by displaying the text on its row
+   on small screen */
+@media only screen and (max-width: 1090px) {
+
+    .carousel-item > .d-flex {
+        flex-direction: column;
+    }
+
+    .carousel-item > .d-flex > p {
+        width: 90%;
+        min-width:90%;
+        height: auto;
+        margin: 0px auto 10px auto;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+    }
 }
